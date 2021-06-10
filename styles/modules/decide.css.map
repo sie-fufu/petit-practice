@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAC,IAAI;CACb;;AAED,AAAA,MAAM,CAAC;EACL,KAAK,EAAG,KAAK;EACb,MAAM,EAAE,IAAI;EACZ,SAAS,EAAE,OAAO;EAClB,YAAY,EAAE,IAAI;CACnB",
+    "sources": [
+        "decide.scss",
+        "_mixin.scss"
+    ],
+    "names": [],
+    "file": "decide.css"
+}
