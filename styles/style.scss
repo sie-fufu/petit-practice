@@ -192,12 +192,21 @@ a.home {
 
 }
 
-.h1log {
-  margin-left: 40px;
+.log-container {
+  background-color: #dac7c7;
+  vertical-align: top;
 }
 
 .login {
   width: 300px;
   height:45px;
   font-size: medium;
+  margin-left: 100px;
+
+}
+
+.h1log {
+  padding-top: 250px;
+  padding-left: 180px;
+
 }
