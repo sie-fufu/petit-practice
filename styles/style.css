@@ -1,3 +1,8 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
 #global-container2 {
   background-color: #e7e1e2;
   height: 100vh;
@@ -39,10 +44,10 @@
 
 .inview .img-zoom {
   opacity: 1;
-  -webkit-transition: -webkit-transform .3s ease;
-  transition: -webkit-transform .3s ease;
-  transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-animation-name: kf-img-show;
           animation-name: kf-img-show;
   -webkit-animation-duration: 1.6s;
@@ -121,7 +126,7 @@
 
 .img-bg50::before {
   display: block;
-  content: '';
+  content: "";
   padding-top: 50%;
 }
 
@@ -228,8 +233,9 @@ a.home {
 }
 
 .log-container {
+  padding-top: 20px;
   background-color: #dac7c7;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 
 .login {
@@ -237,10 +243,17 @@ a.home {
   height: 45px;
   font-size: medium;
   margin-left: 100px;
+  border-radius: 5px;
+}
+
+.login:hover {
+  -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .h1log {
-  padding-top: 250px;
+  padding-top: 200px;
+  padding-bottom: 20px;
   padding-left: 180px;
 }
 /*# sourceMappingURL=style.css.map */
