@@ -5,15 +5,22 @@ html {
   padding: 0;
 }
 
+body {
+  margin: 0;
+}
+
 #global-container2 {
   background-color: #e7e1e2;
   height: 100vh;
+  width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 #global-container {
   height: 100vh;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   // position: relative;
@@ -75,11 +82,12 @@ html {
 }
 
 .bg-img-zoom {
-  background-image: url(/images/petit-practice1-2.png);
+  background-image: url(/images/petit-practice4-2.png);
   background-repeat: no-repeat;
   background-position: center;
-  height: 80vh;
+  height: 90vh;
   max-width: 100%;
+
   background-size: cover;
   object-fit: cover;
   vertical-align: bottom;
@@ -103,19 +111,25 @@ html {
   bottom: 50px;
 
   & .btn-float {
+    outline: none;
     display: inline-block;
-    width: 80px;
-    height: 45px;
+    width: 100px;
+    height: 40px;
     left: 50%;
     position: absolute;
     border-radius: 8px;
     font-weight: 8px;
     font-size: 20px;
-    color: #726f6f;
-    background-color: #dac7c7;
+    // color: #726f6f;
+    box-shadow: 2px 3px 0 0 black;
+
+    color: white;
+    // background-color: #dac7c7;
+    background-color: rgb(69, 69, 69);
     z-index: 100;
+    text-shadow: 1px 1px 1px #dba2b4c9;
     @include animation(
-      $name: kf-img-show,
+      $name: kf-img-up,
       $duration: 2s,
       $timing-function: ease-in-out
     );
@@ -125,14 +139,40 @@ html {
     }
 
     &:hover {
-      box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+      background-color: rgb(109, 108, 108);
     }
+
+    &:active {
+      height: 38px;
+      margin-top: 3px;
+      box-shadow: none ;
+    }
+  }
+}
+
+@keyframes kf-img-up {
+  0% {
+    opacity: 0;
+    transform: translateY(65px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(65px);
+  }
+  50.1% {
+    opacity: 0.5;
+    transform: translateY(65px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 ul {
   list-style: none;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
+  width: 300px;
 
   & > li {
     // border-top: 1px solid #bbb;
@@ -140,6 +180,7 @@ ul {
     align-items: center;
     border-bottom: 1px solid;
     width: 400px;
+    max-width: 100%;
     height: 50px;
 
     &:nth-child(1) {
@@ -163,14 +204,15 @@ ul {
 .main-text {
   width: 100%;
   margin-left: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   position: relative;
 }
 
 a.home {
   font-size: large;
   padding-left: 50px;
-  margin-top: 10px;
+  padding-bottom: 50px;
+  margin-top: 0px;
   position: absolute;
   bottom: 80px;
 }
@@ -199,7 +241,8 @@ a.home {
   border-radius: 5px;
 
   &:hover {
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
+    // box-shadow: 0px 5px 15px 0 gray inset;
+    box-shadow: -5px -5px 10px rgb(167, 150, 150) inset;
   }
 }
 
