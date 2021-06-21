@@ -145,7 +145,7 @@ body {
     &:active {
       height: 38px;
       margin-top: 3px;
-      box-shadow: none ;
+      box-shadow: none;
     }
   }
 }
@@ -153,16 +153,17 @@ body {
 @keyframes kf-img-up {
   0% {
     opacity: 0;
-    transform: translateY(65px);
+    transform: translateY(30px);
   }
   50% {
-    opacity: 0.5;
-    transform: translateY(65px);
+    opacity: 0.02;
+    transform: translateY(30px);
   }
   50.1% {
-    opacity: 0.5;
-    transform: translateY(65px);
+    opacity: 0.08;
+    transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -239,10 +240,14 @@ a.home {
   font-size: medium;
   margin-left: 100px;
   border-radius: 5px;
+  background-color: rgb(141, 130, 130);
+  color: #fff;
 
   &:hover {
     // box-shadow: 0px 5px 15px 0 gray inset;
-    box-shadow: -5px -5px 10px rgb(167, 150, 150) inset;
+    background-color: rgb(150, 139, 139);
+    color: blanchedalmond;
+    cursor: pointer;
   }
 }
 
