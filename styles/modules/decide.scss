@@ -35,10 +35,10 @@ button {
   // box-shadow: 2px 2px 0 0 black;
 
   &#decisive-btn {
+    background-color: rgb(120, 109, 109);
     color: #fff;
-    background-color: #1976d2;
     &:hover {
-      background-color: #2f8cd8;
+      background-color: #8cbbe2;
       cursor: pointer;
     }
 
@@ -50,10 +50,9 @@ button {
   }
 
   &#cancel-btn {
-    color: #fff;
-    background-color: black;
+    background-color: #fff;
     &:hover {
-      background-color: #ccc;
+      background-color: #ddd;
       cursor: pointer;
     }
 
