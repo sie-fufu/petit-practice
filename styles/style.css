@@ -53,6 +53,10 @@ body {
   text-align: center;
 }
 
+.sub-content a {
+  left: 50%;
+}
+
 .img-zoom {
   opacity: 0;
 }
