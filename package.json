@@ -1,0 +1,27 @@
+{
+  "name": "petit-practice",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sie-fufu/petit-practice.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sie-fufu/petit-practice/issues"
+  },
+  "homepage": "https://github.com/sie-fufu/petit-practice#readme",
+  "devDependencies": {
+    "webpack": "^5.40.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "private": true,
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}

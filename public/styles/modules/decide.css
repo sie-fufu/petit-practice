@@ -1,0 +1,77 @@
+body {
+  width: 100%;
+  background-color: #dac7c7;
+}
+
+.decide-title {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.decide-btn {
+  width: 40%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+button {
+  width: 160px;
+  height: 50px;
+  font-size: x-large;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+button#decisive-btn {
+  background-color: #786d6d;
+  color: #fff;
+}
+
+button#decisive-btn:hover {
+  background-color: #8cbbe2;
+  cursor: pointer;
+}
+
+button#decisive-btn:active {
+  height: 52px;
+  margin-top: 2px;
+  margin-bottom: 26px;
+}
+
+button#cancel-btn {
+  background-color: #fff;
+}
+
+button#cancel-btn:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+button#cancel-btn:active {
+  height: 50px;
+  margin-top: 2px;
+  margin-bottom: 28px;
+}
+
+.decide-home {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  font-size: large;
+}
+/*# sourceMappingURL=decide.css.map */

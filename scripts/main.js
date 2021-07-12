@@ -52,12 +52,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ＊localStorageとは、ブラウザ全体で使える変数。
 //   つまり、ページが変わっても同じ値が使える。普通だとページが変わると変数・定数はリセットされる。
-{
+(async () => {
+  const res = await fetch("http://localhost:8000/practice");
+  const result = await res.json();
+  let isCancel = result[0].isCancel;
+  console.log(isCancel);
   const checkOnClickRain = () => {
-    // ブラウザからisCancelの値を取得
-    const isCancel = localStorage.getItem("isCancel");
-    // isCancelが"true"ならrain.htmlへ。"false"ならsecond.htmlへ。
-    if (isCancel === "true") {
+    if (isCancel) {
       location.href = "rain.html";
       return; // リターンをしないと、if文のあとの処理も行われてしまうため。
     }
@@ -65,7 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // root-btn（詳細と書かれたボタン）がクリックされたとき発火。
-  document
-    .getElementById("root-btn")
-    .addEventListener("click", checkOnClickRain);
-}
+  location.pathname === "/main.html" &&
+    document
+      .getElementById("root-btn")
+      .addEventListener("click", checkOnClickRain);
+})();

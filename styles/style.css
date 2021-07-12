@@ -344,4 +344,50 @@ a.home {
   padding-bottom: 20px;
   text-align: center;
 }
+
+.manage-back {
+  padding-left: 30px;
+  padding-top: 5px;
+  position: fixed;
+}
+
+.manage-back a {
+  color: blue;
+}
+
+.manage-screen {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#manege {
+  text-align: center;
+}
+
+#reset,
+#submit {
+  height: 30px;
+  width: 60px;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.pass {
+  text-align: center;
+}
+
+.change-title {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.pass-form {
+  text-align: center;
+}
+
+.pass-form #change-pass {
+  height: 20px;
+}
 /*# sourceMappingURL=style.css.map */

@@ -4,3 +4,6 @@
 *_*[0-9].html
 .gitignore_*[0-9]
 login.js
+.history
+.env
+manegement.html

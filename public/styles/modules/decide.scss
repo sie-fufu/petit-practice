@@ -1,0 +1,72 @@
+// @import "./reset";
+@import "./mixin";
+
+body {
+  width: 100%;
+  // height: 60vh;
+  background-color: #dac7c7;
+}
+
+.decide-title {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.decide-btn {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  width: 160px;
+  height: 50px;
+  font-size: x-large;
+
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+
+  border-radius: 5px;
+  // box-shadow: 2px 2px 0 0 black;
+
+  &#decisive-btn {
+    background-color: rgb(120, 109, 109);
+    color: #fff;
+    &:hover {
+      background-color: #8cbbe2;
+      cursor: pointer;
+    }
+
+    &:active {
+      height: 52px;
+      margin-top: 2px;
+      margin-bottom: 26px;
+    }
+  }
+
+  &#cancel-btn {
+    background-color: #fff;
+    &:hover {
+      background-color: #ddd;
+      cursor: pointer;
+    }
+
+    &:active {
+      height: 50px;
+      margin-top: 2px;
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.decide-home {
+  margin-top: 30px;
+  display: block;
+  text-align: center;
+  font-size: large;
+}

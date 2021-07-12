@@ -1,0 +1,392 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+#global-container2 {
+  background-color: #e7e1e2;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#global-container {
+  height: 100vh;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  max-width: 100%;
+  height: 100vh;
+  vertical-align: bottom;
+  position: relative;
+}
+
+.rain {
+  max-width: 100%;
+  height: 100vh;
+  vertical-align: bottom;
+  position: relative;
+  background-image: url(/images/petit-practice3.png);
+  background-position: center;
+  height: 100vh;
+  max-width: 100%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+}
+
+.sub-content {
+  right: 20%;
+}
+
+.sub-content p {
+  text-align: center;
+}
+
+.sub-content a {
+  left: 50%;
+}
+
+.img-zoom {
+  opacity: 0;
+}
+
+.inview .img-zoom {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-animation-name: kf-img-show;
+          animation-name: kf-img-show;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: normal;
+          animation-fill-mode: normal;
+}
+
+@-webkit-keyframes kf-img-show {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-64px);
+            transform: translateX(-64px);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(-64px);
+            transform: translateX(-64px);
+  }
+  50.1% {
+    opacity: 1;
+    -webkit-transform: translateX(-64px);
+            transform: translateX(-64px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes kf-img-show {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-64px);
+            transform: translateX(-64px);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translateX(-64px);
+            transform: translateX(-64px);
+  }
+  50.1% {
+    opacity: 1;
+    -webkit-transform: translateX(-64px);
+            transform: translateX(-64px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.bg-img-zoom {
+  background-image: url(/images/petit-practice4-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  max-width: 100%;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+  position: relative;
+  bottom: 0;
+}
+
+.img-bg50::before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
+.side-left {
+  display: inline-block;
+  position: absolute;
+  left: 180px;
+  bottom: 50px;
+}
+
+.side-left .btn-float {
+  outline: none;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  left: 50%;
+  position: absolute;
+  border-radius: 8px;
+  font-weight: 8px;
+  font-size: 20px;
+  -webkit-box-shadow: 2px 3px 0 0 black;
+          box-shadow: 2px 3px 0 0 black;
+  color: white;
+  background-color: #454545;
+  z-index: 100;
+  text-shadow: 1px 1px 1px #dba2b4c9;
+  -webkit-animation-name: kf-img-up;
+          animation-name: kf-img-up;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.side-left .btn-float a {
+  text-decoration: none;
+}
+
+.side-left .btn-float:hover {
+  background-color: #6d6c6c;
+}
+
+.side-left .btn-float:active {
+  height: 38px;
+  margin-top: 3px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@-webkit-keyframes kf-img-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.02;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50.1% {
+    opacity: 0.08;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes kf-img-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50% {
+    opacity: 0.02;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50.1% {
+    opacity: 0.08;
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+ul {
+  list-style: none;
+  padding-bottom: 30px;
+  max-width: 80%;
+  text-align: center;
+}
+
+ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid;
+  max-width: 100%;
+  height: 50px;
+}
+
+ul > li:nth-child(1) {
+  padding-top: 30px;
+}
+
+ul > li span.mgr-100 {
+  margin-right: 103px;
+}
+
+ul > li span.mgr-60 {
+  margin-right: 58px;
+}
+
+ul > li span.mgr-80 {
+  margin-right: 76px;
+}
+
+.main-text {
+  width: 90%;
+  margin-left: 30px;
+  margin-bottom: 0px;
+  position: relative;
+  text-align: left;
+}
+
+a.home {
+  font-size: large;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  position: absolute;
+  bottom: 80px;
+}
+
+.sub-content {
+  max-width: 100%;
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.log-container {
+  padding-top: 20px;
+  background-color: #dac7c7;
+  vertical-align: bottom;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.login {
+  width: 300px;
+  height: 45px;
+  font-size: medium;
+  border-radius: 5px;
+  background-color: #8d8282;
+  color: #fff;
+  max-width: 90%;
+}
+
+.login:hover {
+  background-color: #968b8b;
+  color: blanchedalmond;
+  cursor: pointer;
+}
+
+.h1log {
+  padding-top: 200px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.manage-back {
+  padding-left: 30px;
+  padding-top: 5px;
+  position: fixed;
+}
+
+.manage-back a {
+  color: blue;
+}
+
+.manage-screen {
+  text-align: center;
+  padding-top: 10px;
+}
+
+#manege {
+  text-align: center;
+}
+
+#reset, #submit {
+  height: 30px;
+  width: 60px;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.pass {
+  text-align: center;
+}
+
+.change-title {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.pass-form {
+  text-align: center;
+}
+
+.pass-form #change-pass {
+  height: 20px;
+}
+/*# sourceMappingURL=style.css.map */
