@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>プチ練習会</title>
+  </head>
+  <body>
+    <div class="manage-back">
+      <a href="index.html">戻る</a>
+    </div>
+    <h2 class="manage-screen">管理画面</h2>
+    <form action="" method="post" id="manege">
+      <p>日程を入力してください</p>
+      <input name="date" type="date" id="event-date" value="" /><br /><br />
+      <p>開催場所を入力してください</p>
+      <input
+        type="text"
+        name="name"
+        id="prac-place"
+        value="コスパ神崎川"
+        disabled
+      /><br /><br />
+      <p>コート番号を選んでください</p>
+      <input
+        type="checkbox"
+        class="court-number"
+        name="number"
+        value="1"
+        checked
+      />
+      <label for="number">1</label>
+      <input type="checkbox" class="court-number" name="number" value="2" />
+      <label for="number">2</label>
+      <input type="checkbox" class="court-number" name="number" value="3" />
+      <label for="number">3</label>
+      <input type="checkbox" class="court-number" name="number" value="4" />
+      <label for="number">4</label><br />
+      <input type="checkbox" class="court-number" name="number" value="5" />
+      <label for="number">5</label>
+      <input type="checkbox" class="court-number" name="number" value="6" />
+      <label for="number">6</label><br /><br />
+      <input type="checkbox" class="court-number" name="number" value="7" />
+      <label for="number">7</label>
+      <input type="checkbox" class="court-number" name="number" value="8" />
+      <label for="number">8</label>
+      <input type="checkbox" class="court-number" name="number" value="9" />
+      <label for="number">9</label>
+      <input type="checkbox" class="court-number" name="number" value="10" />
+      <label for="number">10</label><br />
+      <input type="checkbox" class="court-number" name="number" value="11" />
+      <label for="number">11</label>
+      <input type="checkbox" class="court-number" name="number" value="12" />
+      <label for="number">12</label><br /><br />
+      <input type="checkbox" class="court-number" name="number" value="13" />
+      <label for="number">13</label>
+      <input type="checkbox" class="court-number" name="number" value="14" />
+      <label for="number">14</label>
+      <input type="checkbox" class="court-number" name="number" value="15" />
+      <label for="number">15</label><br /><br />
+      <p>集合時間を入力してください</p>
+      <input
+        type="text"
+        name="time"
+        id="meet-time"
+        value="9:45"
+        disabled
+      /><br /><br />
+      <button type="reset" id="reset" value="クリア">クリア</button>
+      <button type="submit" id="submit" value="設定">設定</button>
+    </form>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/manegement.js"></script>
+  </body>
+</html>
